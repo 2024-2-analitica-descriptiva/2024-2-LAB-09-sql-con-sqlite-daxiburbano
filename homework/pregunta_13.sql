@@ -43,3 +43,12 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+select 
+    K0, 
+    round(avg(c12) + + 0.001,2) as 'avg(c12)'  ---round redondea a 2 decimales, +0.001 para ajustar resultados
+from 
+    tbl1
+where 
+    c13 > 400
+group by 
+    K0 
